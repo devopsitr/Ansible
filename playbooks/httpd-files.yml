@@ -1,5 +1,5 @@
 ---
-- hosts: webserver
+- hosts: sales 
   tasks:
    - name: Install httpd redhat 
      yum: name=httpd state=installed
