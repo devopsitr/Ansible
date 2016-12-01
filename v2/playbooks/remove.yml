@@ -1,0 +1,9 @@
+---
+- hosts: webserver
+  user: root 
+  tasks:
+    - name: Stop httpd
+      service: name=httpd state=stopped
+    - name: Remove Httpd
+      yum: name=httpd state=absent
+...
